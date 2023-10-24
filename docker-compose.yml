@@ -48,6 +48,8 @@ services:
       MYSQL_DATABASE: $MYSQL_DB
     networks:
       - describly
+    ports:
+      - "3306:3306"
     volumes:
       - describly_mysql_data:/var/lib/mysql
 
